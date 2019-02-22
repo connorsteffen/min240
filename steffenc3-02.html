@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .trapezoid {
+        position: fixed;
+        top: 65vh;
+        left: 40vw;
+        border-bottom: 100px solid #555;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 200px;
+    }
+    .circle {
+        position: fixed;
+        left: 33vw;
+        height: 400px;
+        width: 400px;
+        background-color: whitesmoke;
+        border-radius: 50%;
+    }
+    #house{
+        background-image: url(house.jpg);
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 20vh;
+        left: 45vw;
+        width: 50vw;
+        height: 50vh;
+    }
+    .object {
+        animation: MoveUpDown 1s linear infinite;
+        position: absolute;
+        left: 50vw;
+    }
+    @keyframes MoveUpDown {
+        0%, 100%{
+            bottom: 30;
+        }
+        50% {
+            bottom: 50vh;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="trapezoid "></div>
+    <div class="circle"></div>
+    <div id="house"></div>
+    <div class="object">Special Snowglobe</div>
+</body>
+</html>
